@@ -1,0 +1,20 @@
+{
+  "name": "gtm-wizard",
+  "version": "1.0.0",
+  "description": "GTM container expert: diagnose, fix, and build — Claude Code skill",
+  "author": "DVision",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DVisionPRO/gtm-wizard"
+  },
+  "homepage": "https://github.com/DVisionPRO/gtm-wizard#readme",
+  "bugs": {
+    "url": "https://github.com/DVisionPRO/gtm-wizard/issues"
+  },
+  "keywords": ["gtm", "google-tag-manager", "tracking", "analytics", "claude-code", "skill"],
+  "claude": {
+    "type": "plugin",
+    "commands": ".claude/commands/"
+  }
+}

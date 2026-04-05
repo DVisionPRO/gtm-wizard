@@ -1,0 +1,14 @@
+# GTM Wizard runtime files (user-local, not for repo)
+.gtm-wizard-config.json
+.gtm-wizard-research/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Real GTM container exports (contain client data)
+GTM-*.json
