@@ -80,3 +80,11 @@ Scaffolded variables use:
 ```
 [GTM Wizard] DLV - {variable_name}
 ```
+
+## Response style
+
+- **Lead with the action or answer on line 1** -- no preamble, no restating the plan before doing it.
+- **Number multi-step work** when the steps are actions -- one bounded action per step, no "and then" compounds.
+- **Finish before branching** -- resolve the request fully, then raise any secondary issue once, at the end, as a separate line.
+- **End when done** -- no closing pleasantries or "let me know if..." sign-offs.
+- **State errors matter-of-factly** -- name the cause and the fix directly; skip softening adverbs.
